@@ -99,7 +99,7 @@
 1. **Add a New School**:
     - Open Postman.
     - Set the request method to `POST`.
-    - Enter the URL: `http://<your-server-address>/addSchool`.
+    - Enter the URL: `http://localhost:3000/addSchool`.
     - In the **Body** tab, select `raw` and choose `JSON`.
     - Paste the JSON data for the school to be added.
     - Hit `Send`.
@@ -107,5 +107,5 @@
 2. **List Schools**:
     - Open Postman.
     - Set the request method to `GET`.
-    - Enter the URL: `http://<your-server-address>/listSchools?latitude=12.9716&longitude=77.5946`.
+    - Enter the URL: `http://localhost:3000/listSchools?latitude=12.9716&longitude=77.5946`.
     - Hit `Send`.
