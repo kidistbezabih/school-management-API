@@ -1,13 +1,9 @@
 const mysql = require('mysql2');
 require('dotenv').config();
 
-const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  connectTimeout: 10000 // Timeout in milliseconds (10 seconds)
-});
+const db = mysql.createConnection(
+  "mysql://avnadmin:AVNS_ztYjq1TWNUD83JdxgXG@mysql-1898ac85-kidistbezabh-02ee.j.aivencloud.com:19715/defaultdb?ssl-mode=REQUIRED"
+);
 
 db.connect(err => {
   if (err) throw err;
